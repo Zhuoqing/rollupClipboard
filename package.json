@@ -1,0 +1,18 @@
+{
+  "name": "rollup_clipboard_issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "clipboard": "1.5.16",
+    "rollup": "0.40.0",
+    "rollup-plugin-commonjs": "7.0.0",
+    "rollup-plugin-node-resolve": "2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "./node_modules/.bin/rollup -n test -c rollup.config.js -i ./index.js -o ./bundle.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
