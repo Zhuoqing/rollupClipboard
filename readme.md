@@ -16,6 +16,6 @@ and its [usage example](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/
     var cb1 = new Clipboard('.btn');
 when we try to bundle with rollup with same syntax, somehow `new Clipboard` doesn't work and we had to do `new Clipboard.default` which doesn't seem right.
 #to repro
-`npm i && npm run build`, then load `index.html` and watch the error in console, can also check [jsfiddle here](https://jsfiddle.net/93h4Lx3r/1/)
+`npm i && npm run build`, then load `index.html` and watch the error in console, can also check [jsfiddle here](https://jsfiddle.net/93h4Lx3r/2/)
 
 note if change to use `import Clipboard from 'clipboard';` it works. however in our repo we are using typescript@2.0.10 and it will complain `module has no default export`
