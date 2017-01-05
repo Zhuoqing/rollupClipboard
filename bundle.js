@@ -751,8 +751,21 @@ var Clipboard = Object.freeze({
 	__moduleExports: clipboard
 });
 
-var cb1 = new clipboard$1('.btn');
-document.getElementById("test1").innerText = 'I am replaced 1';
-var cb2 = new Clipboard('.btn');
-document.getElementById("test2").innerText = 'I am replaced 2';
+try {
+  var cb1 = new clipboard$1('.btn');
+  document.getElementById("test1").innerText = 'I am replaced 1';
+}
+catch (err) {	
+  console.error(err);
+  document.getElementById("err1").innerText = err.toString();
+}
+
+try {
+  var cb2 = new Clipboard('.btn');
+  document.getElementById("test2").innerText = 'I am replaced 2';
+}
+catch (err) {	
+  console.error(err);
+  document.getElementById("err2").innerText = err.toString();
+}
 //# sourceMappingURL=bundle.js.map
