@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@types/clipboard": "^1.5.31",
     "clipboard": "1.5.16",
     "rollup": "0.40.0",
     "rollup-plugin-commonjs": "7.0.0",
